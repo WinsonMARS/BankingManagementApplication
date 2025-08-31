@@ -19,7 +19,7 @@ public class javaconnect {
     private javaconnect() {
         try {
             Class.forName("org.sqlite.JDBC");
-            conn=DriverManager.getConnection("jdbc:sqlite:/home/nisiddharth/Desktop/Banking_Management_Application/bank.sqlite");
+            conn=DriverManager.getConnection("jdbc:sqlite:C:/Users/winso/Documents/SoftwareConstruction&Configuration/Assignment2/BankingManagementApplication/bank.sqlite");
         } catch (SQLException | ClassNotFoundException e) {
             JOptionPane.showMessageDialog(null,e);
         }
