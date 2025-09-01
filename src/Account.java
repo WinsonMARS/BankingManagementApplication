@@ -415,21 +415,19 @@ public static boolean isValidUsername(String name) {
         return m.matches();
     }
     // function to validate wether a date of birth entered is corrct or not.
-    private static Boolean isValidDOB(String dob){
+    public static Boolean isValidDOB(String dob){
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         Date testDate = null;
-
-
 
         try{
             testDate = df.parse(dob);
         } catch (ParseException e){ }
-        if (!df.format(testDate).equals(dob)){
-            return false;
-        }
-        else{
-            return true;
-        }
+            if (!df.format(testDate).equals(dob)){
+                return false;
+            }
+            else{
+                return true;
+            }
     }
     // function to validate wether a mobile number entered is in right format or not, using reegular expressions.
     public static boolean isValidMobileNo(String str) {

@@ -43,6 +43,10 @@ public class MyPage extends javax.swing.JFrame {
         set_profile_page();
         
     }
+    
+    public static String getAuthenticatedAccountNumber() {
+        return currentAccountNumber;
+    }
 
     public static void setAuthenticatedAccountNumber(String accountNumber) {
         MyPage.currentAccountNumber=accountNumber;
