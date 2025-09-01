@@ -18,7 +18,7 @@ import java.lang.reflect.Field;
 
 /**
  *
- * @author winso
+ * @author winson
  */
 public class AccountTest {
     
@@ -41,8 +41,7 @@ public class AccountTest {
     public void tearDown() {
     }
     
-    
-
+   
     /**
      * Test of RandomAcc method, of class Account.
      * @throws java.lang.Exception
